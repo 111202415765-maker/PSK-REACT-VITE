@@ -10,18 +10,26 @@ function FormSignIn() {
     <>
       <form>
         {/* input */}
-        <LabeledInput
-          label="Email Address"
-          name="email"
-          type="email"
-          placeholder="hello@example.com"
-        />
-        <LabeledInput
-          label="Password"
-          name="password"
-          type="password"
-          placeholder="••••••••••••••"
-        />
+        <div className="mb-4">
+          <LabeledInput
+            label="Email Address"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="hello@example.com"
+            backgroundColor="bg-white"
+          />
+        </div>
+        <div className="mb-4">
+          <LabeledInput
+            label="Password"
+            id="password"
+            name="password"
+            type="password"
+            placeholder="••••••••••••••"
+            backgroundColor="bg-white"
+          />
+        </div>
 
         {/* check box */}
         <div className="mb-4">

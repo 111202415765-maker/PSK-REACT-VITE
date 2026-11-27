@@ -9,19 +9,35 @@ function FormSignUp() {
     <>
       <form>
         {/* input */}
-        <LabeledInput label="Name" name="name" placeholder="Tanzir Rahman" />
-        <LabeledInput
-          label="Email Address"
-          name="email"
-          type="email"
-          placeholder="hello@example.com"
-        />
-        <LabeledInput
-          label="Password"
-          name="password"
-          type="password"
-          placeholder="••••••••••••••"
-        />
+        <div className="mb-4">
+          <LabeledInput
+            label="Name"
+            id="name"
+            name="name"
+            placeholder="Tanzir Rahman"
+            backgroundColor="bg-white"
+          />
+        </div>
+        <div className="mb-4">
+          <LabeledInput
+            label="Email Address"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="hello@example.com"
+            backgroundColor="bg-white"
+          />
+        </div>
+        <div className="mb-4">
+          <LabeledInput
+            label="Password"
+            id="password"
+            name="password"
+            type="password"
+            placeholder="••••••••••••••"
+            backgroundColor="bg-white"
+          />
+        </div>
 
         <p className="mb-4 text-sm text-gray-01">
           By continuing, you to agree to our{" "}
