@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+/* warna custom untuk component atomic design */
+@theme {
+  --color-primary: #2563eb;
+
+  --color-gray-01: #d9dde3;
+  --color-gray-02: #e1e5ea;
+  --color-gray-03: #e8ebef;
+  --color-gray-04: #eef0f3;
+  --color-gray-05: #f7f8f9;
+  --color-gray-06: #ffffff;
+}
+
 body {
   margin: 0;
 }

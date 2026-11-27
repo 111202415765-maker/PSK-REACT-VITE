@@ -1,4 +1,4 @@
-import Exercise from './Exercise'
+import Exercise from './latihan/Exercise'
 
 function App() {
   return <Exercise />
