@@ -4,7 +4,7 @@ import FormSignUp from "../components/Fragments/FormSignUp";
 
 const SignUpPage = () => {
   return (
-    <AuthLayout title="Create an account">
+    <AuthLayout title="Create an Account">
       <FormSignUp />
     </AuthLayout>
   );

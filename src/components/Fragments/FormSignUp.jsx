@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LabeledInput from "../Elements/LabeledInput";
 import Button from "../Elements/Button";
 import GoogleIcon from "../Elements/GoogleIcon";
@@ -19,23 +20,23 @@ function FormSignUp() {
           label="Password"
           name="password"
           type="password"
-          placeholder="••••••••••••"
+          placeholder="••••••••••••••"
         />
 
-        <p className="mb-4 text-sm text-gray-02">
-          By continuing, you agree to our{" "}
+        <p className="mb-4 text-sm text-gray-01">
+          By continuing, you to agree to our{" "}
           <a href="#" className="text-primary">
             terms of service.
           </a>
         </p>
 
         {/* button sign up */}
-        <Button>Sign up</Button>
+        <Button>Sign Up</Button>
       </form>
 
-      <div className="my-4 flex items-center gap-3">
+      <div className="my-5 flex items-center gap-3">
         <span className="h-px flex-1 bg-gray-05" />
-        <span className="text-xs text-gray-03">or sign up with</span>
+        <span className="text-sm text-gray-03">or sign up with</span>
         <span className="h-px flex-1 bg-gray-05" />
       </div>
 
@@ -47,11 +48,12 @@ function FormSignUp() {
         </span>
       </Button>
 
-      <p className="mt-6 text-center text-sm text-gray-02">
+      {/* link ke halaman login */}
+      <p className="mt-6 text-center text-sm text-gray-01">
         Already have an account?{" "}
-        <a href="#" className="font-semibold text-primary">
-          Sign in here
-        </a>
+        <Link to="/login" className="font-semibold text-primary">
+          Sign In Here
+        </Link>
       </p>
     </>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LabeledInput from "../Elements/LabeledInput";
 import CheckBox from "../Elements/CheckBox";
 import Button from "../Elements/Button";
@@ -19,24 +20,21 @@ function FormSignIn() {
           label="Password"
           name="password"
           type="password"
-          placeholder="••••••••••••"
+          placeholder="••••••••••••••"
         />
 
         {/* check box */}
-        <div className="mb-6 flex items-center justify-between">
-          <CheckBox name="remember">Remember me</CheckBox>
-          <a href="#" className="text-sm font-medium text-primary">
-            Forgot Password?
-          </a>
+        <div className="mb-4">
+          <CheckBox name="remember">Keep me signed in</CheckBox>
         </div>
 
         {/* button login */}
-        <Button>Log in</Button>
+        <Button>Login</Button>
       </form>
 
-      <div className="my-4 flex items-center gap-3">
+      <div className="my-5 flex items-center gap-3">
         <span className="h-px flex-1 bg-gray-05" />
-        <span className="text-xs text-gray-03">or sign in with</span>
+        <span className="text-sm text-gray-03">or sign in with</span>
         <span className="h-px flex-1 bg-gray-05" />
       </div>
 
@@ -48,11 +46,11 @@ function FormSignIn() {
         </span>
       </Button>
 
-      <p className="mt-6 text-center text-sm text-gray-02">
-        Don&apos;t have an account?{" "}
-        <a href="#" className="font-semibold text-primary">
-          Sign up here
-        </a>
+      {/* link ke halaman register */}
+      <p className="mt-6 text-center text-sm">
+        <Link to="/register" className="font-semibold text-primary">
+          Create an account
+        </Link>
       </p>
     </>
   );

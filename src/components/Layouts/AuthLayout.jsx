@@ -9,11 +9,13 @@ function AuthLayout(props) {
       <div className="w-full max-w-sm">
         <Logo />
 
-        <h1 className="mt-8 mb-6 text-center text-xl font-bold text-defaultBlack">
-          {title}
-        </h1>
+        {title && (
+          <h1 className="mt-6 text-center text-xl font-bold text-defaultBlack">
+            {title}
+          </h1>
+        )}
 
-        {children}
+        <div className="mt-8">{children}</div>
       </div>
     </main>
   );
