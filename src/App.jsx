@@ -1,6 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import DashboardPage from "./pages/dashboard";
+import BalancePage from "./pages/balance";
 import SignInPage from "./pages/signin";
 import SignUpPage from "./pages/signup";
 import ErrorPage from "./pages/error";
@@ -11,6 +12,10 @@ function App() {
       path: "/",
       element: <DashboardPage />,
       errorElement: <ErrorPage />,
+    },
+    {
+      path: "/balance",
+      element: <BalancePage />,
     },
     {
       path: "/login",
