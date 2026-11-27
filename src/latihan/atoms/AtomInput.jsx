@@ -6,7 +6,7 @@ function AtomInput({ type = "text", ...props }) {
       <input
         type={type}
         {...props}
-        className={`border border-gray-01 rounded-md p-2 ${props.className ?? ""}`}
+        className={`border border-gray-05 rounded-md p-2 ${props.className ?? ""}`}
       />
     </>
   );

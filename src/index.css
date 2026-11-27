@@ -1,17 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
-/* warna custom untuk component atomic design */
+/* sub-atomic : design system Finebank (warna & tipografi) */
 @theme {
-  --color-primary: #2563eb;
+  --color-primary: #299d91;
+  --color-defaultBlack: #191919;
+  --color-main-bg: #f4f5f7;
 
-  --color-gray-01: #d9dde3;
-  --color-gray-02: #e1e5ea;
-  --color-gray-03: #e8ebef;
-  --color-gray-04: #eef0f3;
-  --color-gray-05: #f7f8f9;
-  --color-gray-06: #ffffff;
+  --color-gray-01: #666666;
+  --color-gray-02: #878787;
+  --color-gray-03: #9f9f9f;
+  --color-gray-04: #bdbdbd;
+  --color-gray-05: #e8e8e8;
+  --color-gray-06: #f4f5f7;
+
+  --font-poppins: "Poppins", sans-serif;
 }
 
 body {
   margin: 0;
+  font-family: var(--font-poppins);
+  background-color: var(--color-main-bg);
 }
